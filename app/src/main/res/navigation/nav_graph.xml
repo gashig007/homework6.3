@@ -6,7 +6,7 @@
     app:startDestination="@layout/fragment_photo">
 
     <fragment
-        android:id="@+id/photosFragment"
+        android:id="@+id/photoFragment"
         android:name="com.geektech.baselesson.ui.PhotoFragment"
         android:label="fragment_photo"
         tools:layout="@layout/fragment_photo">
