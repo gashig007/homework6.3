@@ -37,6 +37,7 @@ class SecondFragment :
     override fun initObservers() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.listState.observe(viewLifecycleOwner) { list ->
+                println(list.toString())
                 photoAdapter.submitData(list)
             }
         }

@@ -3,22 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@layout/fragment_photo">
+    app:startDestination="@id/photoFragment">
+
 
     <fragment
         android:id="@+id/photoFragment"
         android:name="com.geektech.baselesson.ui.PhotoFragment"
-        android:label="fragment_photo"
-        tools:layout="@layout/fragment_photo">
+        android:label="PhotoFragment" >
         <action
-            android:id="@+id/action_photoFragment_to_secondPhotoFragment"
+            android:id="@+id/action_photoFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.geektech.baselesson.ui.SecondFragment"
-        android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
-
+        android:label="SecondFragment" />
 </navigation>

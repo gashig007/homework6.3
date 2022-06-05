@@ -38,10 +38,11 @@ class PhotoAdapter : ListAdapter<Image, PhotoAdapter.PhotoViewHolder>(BaseUtil()
             binding.root.setOnClickListener {
                 if (binding.image.isInvisible) {
                     binding.image.isVisible = true
-                    selected(image.image)
+                    isSelected(image.image)
+                    println(secondList)
                 } else {
                     binding.image.isInvisible = true
-                    isSelected(image.image)
+                    selected(image.image)
                 }
             }
         }

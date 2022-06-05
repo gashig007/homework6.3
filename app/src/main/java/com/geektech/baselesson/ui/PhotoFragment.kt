@@ -45,8 +45,9 @@ class PhotoFragment : BaseFragment<FragmentPhotoBinding>(R.layout.fragment_photo
 
     override fun initListeners() {
         binding.fabNext.setOnClickListener {
+            println(photoAdapter.secondList)
             viewModel.putPicture(photoAdapter.secondList)
-            findNavController().navigateSafely(R.id.action_photoFragment_to_secondPhotoFragment)
+            findNavController().navigateSafely(R.id.action_photoFragment_to_secondFragment)
         }
     }
 }
